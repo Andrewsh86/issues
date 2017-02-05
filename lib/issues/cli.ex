@@ -1,7 +1,8 @@
 defmodule Issues.CLI do
   @default_count 4
   import Issues.TableFormatter, only: [print_table_for_columns: 2]
-  def run(argv) do
+  
+  def main(argv) do
     argv
     |>parse_args
     |>process
